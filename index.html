@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bomb Sweeper</title>
+  
+    <!--load all styles -->
+  <!--   <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+  
+  <body>
+
+  <div class="sidenav">
+    <button class="btn" id="reset"><i class="fas fa-redo-alt"></i></button>
+    <div class="info-panel">
+      <i class="fa fa-bomb"></i><span id="bomb-num">0</span>
+      <div class="info-panel">
+        <i class="fa fa-flag"></i><span id="flag-num">0</span>
+      </div>      
+      <div class="info-panel">
+        <i class="fa fa-hourglass"></i><span id="timer">0</span>  
+      </div>
+    </div>
+    <div id="customized-input-create">
+      <input type="text" class="customized-input" id="customized-input-row" placeholder="自訂行數(=列數)">
+      <input type="text" class="customized-input" id="customized-input-bomb-number" placeholder="自訂炸彈數">
+      <button class="btn" id="customized-create-btn"><i class="fas fa-check"></i></button>
+    </div> 
+  </div>
+  
+  <!-- Page content -->
+    <div class="main">
+      <div class="container" id="field-panel">
+        <!-- print fields here -->
+      </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+
+</html>
